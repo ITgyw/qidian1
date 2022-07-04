@@ -1,8 +1,11 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import { FooterWrapper } from './style'
+import { isPathPartlyExisted } from '../../utils'
 
 export default function Footer() {
+    const { pathname } = useLocation()
+    if (isPathPartlyExisted(pathname)) return
     return (
         <FooterWrapper>
             <NavLink to="/bookshelf" >

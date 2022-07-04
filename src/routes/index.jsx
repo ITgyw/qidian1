@@ -13,7 +13,7 @@ const RouterConfig = () => {
         <Suspense fallback={null}>
             <Routes>
                 {/* redirect 重定向 */}
-                <Route path="/" element={<Navigate to="/select" replace={true} />} />
+                <Route path="/" element={<Navigate to="/select/male" replace={true} />} />
                 <Route path="/select" element={<Select />}>
                     <Route path="/select/male" element={<Male />} />
                     <Route path="/select/female" element={<Female />} />

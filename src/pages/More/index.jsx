@@ -3,6 +3,7 @@ import { getMore } from '@/api/request'
 import { NavLink, Link } from 'react-router-dom'
 import { Wrapper } from './style'
 
+
 export default function More() {
     const [more, setMore] = useState([])
     useEffect(() => {

@@ -9,9 +9,9 @@ export default function Recommend({ recommend }) {
     useEffect(() => {
         if (swiper) { return }
         swiper = new Swiper('.swiper-container', {
-            observer: true,
-            observeParents: true,
-            freeMode: true,
+            // observer: true,
+            // observeParents: true,
+            // freeMode: true,
         })
     }, [])
 
